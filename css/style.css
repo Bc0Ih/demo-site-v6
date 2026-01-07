@@ -23,6 +23,21 @@ a {
     text-decoration: none;
 }
 
+/* mainとfooterのコンテンツ幅を設定 */
+
+.site-title{
+    width: 110px;
+    line-height: 1px;
+    margin-right: 50px;
+}
+
+.site-title a{
+    display: block;
+}
+
+
+
+>>>>>>> fd944db (first commit from local)
 /*-------------------------------------------
 Mainvisual
 -------------------------------------------*/
@@ -33,4 +48,33 @@ widthをvwで指定することで、画面幅を基準にした横幅になる
 #mainvisual {
     width: 90vw;
     margin: 4% auto 0 auto;
+}
+
+/*-------------------------------------------
+Header
+-------------------------------------------*/
+
+#header{
+    width: 90vW;
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    margin: 0 auto 30px auto;
+}
+
+#header ul {
+    display: flex;
+}
+
+#header li {
+    font-size: 0.875rem;
+    margin-right: 30px;
+}
+
+/*
+最後のliタグには margin-right を設定しない
+*/
+
+#header li:last-child{
+    margin-right: 0;
 }
